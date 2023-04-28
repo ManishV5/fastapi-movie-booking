@@ -33,6 +33,29 @@
 
    -  Sample Response
     ![book](images/sample_book_tickets_response.png)
+
+
+#### Firestore (using FireO ORM)
+
+- Movie Schema
+  - id
+  - movie_title
+  - start_time
+  - end_time
+  - seats_booked
+  - ticket_price
+  - isles
+  - seats_per_isle
+  - booked_out
+
+
+- Ticket Schema
+  - id
+  - timestamp
+  - movie_id
+  - seats_booked
+  - amount 
+ 
 ---
 
 #### Technologies Used
