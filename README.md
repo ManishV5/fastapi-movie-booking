@@ -1,7 +1,9 @@
 # FastAPI's for Movie Booking Portal
 
+> Note - If the images are not loading in the README file. Clone the repo and view it on your local machine for best experince.
+
 ## System Design
-![systen-design](images/system_design.jpg)
+![system_design](images/system_design.png)
 
 #### API's avaiable to users
 
@@ -10,7 +12,7 @@
     Returns all the movies currently avaiable in the Firestore database.
 
     - Sample Response
-    ![](images/sample_get_all_movies_response.png)
+    ![movies](images/sample_get_all_movies_response.png)
 
 2. Get request `/api/v1/movies/{movie_id}`
 
@@ -20,7 +22,7 @@
     Request requires a valid `movie_id`. Use `/api/v1/movies` api to obtain it.
 
     - Sample Response
-    ![](images/sample_get_one_movie_response.png)
+    ![movie](images/sample_get_one_movie_response.png)
 
 3. Post request `/api/v1/book`
    
@@ -30,7 +32,7 @@
    `
 
    -  Sample Response
-    ![](images/sample_book_tickets_response.png)
+    ![book](images/sample_book_tickets_response.png)
 ---
 
 #### Technologies Used
@@ -87,4 +89,4 @@ execute `pytest`
 > Note - using -v flag shows the tests being executed in the terminal
 
    -  Expected result on testing this application.
-    ![](images/sample_pytest_output.png)
+    ![test](images/sample_pytest_output.png)
