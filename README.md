@@ -38,24 +38,26 @@
 #### Firestore (using FireO ORM)
 
 - Movie Schema
-  - id
-  - movie_title
-  - start_time
-  - end_time
-  - seats_booked
-  - ticket_price
-  - isles
-  - seats_per_isle
-  - booked_out
+  - id - unique id
+  - movie_title - title of the movie 
+  - start_time - starting time of the movie
+  - end_time - ending time of the movie
+  - seats_booked - list of all the seats booked
+  - ticket_price - price of the ticket
+  - isles - list of isles avaiable
+  - seats_per_isle - number of seats in each isle
+  - booked_out - boolean value showing if the movie is sold out
 
+> Note - It is assumed all isles have same number of seats.
 
 - Ticket Schema
-  - id
-  - timestamp
-  - movie_id
-  - seats_booked
-  - amount 
+  - id - unique id
+  - timestamp - date time of ticket creation
+  - movie_id - id of the movie to which the ticket belongs to.
+  - seats_booked - Seats alloted
+  - amount - amount payed
  
+> Note - In the current implementation, user has no choice and is alloated tickets randomly. 
 ---
 
 #### Technologies Used
