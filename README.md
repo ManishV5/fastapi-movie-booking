@@ -81,6 +81,8 @@
   - Lists all python dependencies.
 - **images**
   - Contains output images
+- **Dockerfile**
+  - Dockerfile to craete a container and deploy FastAPIs
 
 ---
 
@@ -115,3 +117,24 @@ execute `pytest`
 
    -  Expected result on testing this application.
     ![test](images/sample_pytest_output.png)
+
+
+---
+
+#### Docker
+
+##### Prerequisite / Assumptions
+  - You have access to the repository. To copy the code on your own.
+  - Installing gcloud SDK, gcloud authorization and steps involved in setting up the project are already done.
+  
+> Note - Using this dockerfile inside Google Cloud environment with right authorization will not require additional steps
+
+1. Open the directory which contains the `dockerfile` 
+2. Build a docker container by running the following command
+   ```
+        docker build -t fastapi-container .
+   ```
+3. Run the container
+    ```
+          docker run fastapi-container
+    ```   
