@@ -1,7 +1,7 @@
 # FastAPI's for Movie Booking Portal
 
 ## System Design
-![](images/system_design.png)
+![systen-design](images/system_design.jpg)
 
 #### API's avaiable to users
 
